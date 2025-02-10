@@ -1,0 +1,21 @@
+{
+    "short_name": "SQL Pal",
+    "name": "AI-Powered SQL Copilot",
+    "icons": [
+      {
+        "src": "/icons/favicon-144x144.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/icons/favicon-144x144.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1e3a8a"
+  }
+  
