@@ -45,7 +45,7 @@ router.post("/analyze", upload.single("image"), async (req, res) => {
     const imagePath = req.file.path;
     const imagePart = fileToGenerativePart(imagePath, req.file.mimetype);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-    const prompt = "Fix this SQL code.";
+    const prompt = "Fix this SQL code and provide feedback on best practices and performance optimizations IF needed .";
     const result = await model.generateContent([prompt, imagePart]);
     const responseText = result.response.text();
     // Clean up uploaded image
